@@ -1,0 +1,159 @@
+import os;
+import time;
+import threading;
+import Stats;
+import sqlite3
+import traceback;
+from datetime import datetime;
+def startServ():
+    while True:
+        os.system("python3 manage.py runserver 0.0.0.0:"+Stats.PORT);
+        time.sleep(2);
+def code_checker_func():
+    while True:
+        time.sleep(60);
+        date=datetime.now()
+        hour=date.hour;
+        minute=date.minute;
+        print(str(hour)+":"+str(minute))
+        if hour==1 and minute==0:
+            conn = sqlite3.connect('basic.sqlite')
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM exLink");
+            conn.commit();
+            conn.close();
+def cleanerDrivers():
+    while True:
+        try:
+            time.sleep(60);
+            date=datetime.now()
+            hour=int(date.hour)+5;
+            minute=date.minute;
+            print(str(hour)+":"+str(minute))
+            if hour==1 and minute==0:
+                conn1 = sqlite3.connect('basic.sqlite')
+                cursor1 = conn1.cursor()
+                cursor1.execute("SELECT merchName FROM 'clearTime'");
+                merchNames=cort_to_list(cursor1.fetchall());
+                drive=""
+                for merchName in merchNames:
+                    cursor1.execute("SELECT drivers FROM 'clearTime' WHERE merchName=(?)",(merchName,));
+                    drivers=cort_to_list(cursor1.fetchall())[0];
+                    drivers=stringToArrayData(drivers)[0];
+                    for driver in drivers:
+                        conn=sqlite3.connect(mPath(merchName,"inCar"));
+                        cursor=conn.cursor();
+                        cursor.execute("UPDATE 'cashInCar' SET cash='0'WHERE driver=(?)",(driver,));
+                        cursor.execute("UPDATE 'cashInCar' SET term='0'WHERE driver=(?)",(driver,));
+                        cursor.execute("UPDATE 'cashInCar' SET per='0'WHERE driver=(?)",(driver,));
+                        cursor.execute("UPDATE 'cashInCar' SET on_day='0'WHERE driver=(?)",(driver,));
+                        cursor.execute("DELETE FROM 'nakNum' WHERE owner = (?)",(driver,));
+                        cursor.execute("DELETE FROM 'naks' WHERE owner = (?)",(driver,));
+                        conn.commit();
+                        conn.close();
+                        conn=sqlite3.connect(mPath(merchName,"orders"));
+                        cursor=conn.cursor();
+                        cursor.execute("UPDATE 'order' SET get_type='new'WHERE owner=(?)AND get_type='ord'",(driver,));
+                        cursor.execute("UPDATE 'order' SET owner='new'WHERE owner=(?)AND get_type='ord'",(driver,));
+                        cursor.execute("UPDATE 'order' SET owner='new'WHERE owner=(?)AND get_type='new'",(driver,));
+                        conn.commit();
+                        conn.close();
+                        print("NULLLLLLL "+driver);
+                conn1.close();
+        except Exception as e:
+            logger(e);
+def cleanAct():
+    while True:
+        date=datetime.now()
+        hour=date.hour;
+        minute=date.minute;
+        Month=date.month;
+        merchants=os.listdir("merchants");
+        if hour==16 and minute==59:
+            print("ok");
+            for m in merchants:
+                conn = sqlite3.connect(mPath(m,"orders"))
+                cursor = conn.cursor()
+                cursor.execute("SELECT Date FROM 'actHistory'");
+                Date=cort_to_list(cursor.fetchall());
+                for d in Date:
+                    date=d+".;";
+                    date=date.replace(".",":");
+                    date=stringToArrayData(date)[0];
+                    print(date)
+                    day=date[0];
+                    month=date[1].replace(" ","");
+                    if month=="12":
+                        month="0";
+                    year=date[2];
+                    print(day,month,year);
+                    if int(month)==(Month-2):
+                        print("True")
+                        cursor.execute("DELETE FROM 'actHistory' WHERE Date = (?)",(d,));
+                        conn.commit();
+                    else:
+                        print("False");
+                conn.close();
+        time.sleep(60);
+def stringToArray(string):
+    prods=[];
+    prod_mass=[];
+    tov=""
+    for i in string:
+        if i=="^":
+            prod_mass.append(prods);
+            prods=[];
+        elif i =="|":
+            prods.append(tov);
+            tov="";
+        else:
+            tov=tov+i;
+    return prod_mass;
+def cort_to_list(cort):
+    list_=[];
+    for i in range(len(cort)):
+        list_.append(cort[i][0]);
+    return list_;
+def stringToArrayData(string):
+    prods=[];
+    prod_mass=[];
+    tov=""
+    for i in string:
+        if i==";":
+            prod_mass.append(prods);
+            prods=[];
+        elif i ==":":
+            prods.append(tov);
+            tov="";
+        else:
+            tov=tov+i;
+    return prod_mass;
+def cort_to_list(cort):
+    list_=[];
+    for i in range(len(cort)):
+        list_.append(cort[i][0]);
+    return list_;
+def mPath(merchName,base):
+    return "merchants/"+merchName+"/"+base+'.sqlite';
+def logger(e):
+    try:
+        logging.error(e);
+        file=open("log/mylog.txt","w");
+        file.write(traceback.format_exc());
+        file.close();
+        file=open("log/mylog.txt","r");
+        text=file.read();
+        file.close();
+        #req = "https://api.telegram.org/bot"+token+"/sendMessage?chat_id="+MYTGID+"&text="+text;
+        #get_html(req);
+    except:
+        print(e);
+a = threading.Thread(target=startServ, args=())
+a.start() 
+b = threading.Thread(target=code_checker_func, args=())
+b.start() 
+c = threading.Thread(target=cleanerDrivers, args=())
+c.start()
+d = threading.Thread(target=cleanAct, args=())
+d.start()
+

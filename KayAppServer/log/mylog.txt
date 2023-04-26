@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2316, in enter
+    merchName=Merch(login,0);
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 10754, in Merch
+    return merchName;
+UnboundLocalError: local variable 'merchName' referenced before assignment

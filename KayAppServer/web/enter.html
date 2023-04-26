@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Авторизация</title>
+</head>
+<body>
+	<div class="ImgPlace">
+		<img class="Img" src="_URL_IMG_">
+	</div>
+    <p>_ERR_</p>
+	<form action="_URL_check_web_enter/" method="GET">
+        <input class="inText" type="text" placeholder="Название" name="name">
+        <input class="inText" type="text" placeholder="ИНН" name="inn">
+        <input class="inText" type="text" placeholder="Адрес" name="adres">
+        <input class="inText" type="text" placeholder="Телефон" name="phone">
+        <input class="inText" type="text" placeholder="Район" name="district">
+
+		<input class="inText" type="text" placeholder="Ваш логин" name="login">
+		<input class="inText" type="text" placeholder="Ваш пароль" name="pswd">
+        <input class="enterBtn" type="submit" value="Вход" name="sub">
+	</form>
+</body>
+<style type="text/css">
+	.Img{
+		height: 30%;
+		width: 60%;
+		}
+	.ImgPlace{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		}
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    .enterBtn{
+        background: #177397;
+        border: none;
+        width: 50%;
+        font-size:38px;
+    }
+    .inText{
+        font-size: 30px;
+    }
+</style>
+</html>

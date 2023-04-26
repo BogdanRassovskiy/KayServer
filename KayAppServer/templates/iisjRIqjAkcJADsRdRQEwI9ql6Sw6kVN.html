@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kay-Space</title>
+</head>
+<body>
+    <div>
+        <form  action="http://143.110.224.27:2125/save_excel/" style="position: absolute;overflow: auto;width: 100%;height: 100%;"method="POST"enctype="multipart/form-data">
+             {% csrf_token %}
+            <input name="nakFile" type="file" id="nakFile" multiple  style="display: block;position: relative;left: 40%;width: 20%;top: 40%;" accept= application/vnd.openxmlformats-officedocument.spreadsheetml.sheet (.XLSX)>
+            <input type="hidden" name="code" value="iisjRIqjAkcJADsRdRQEwI9ql6Sw6kVN" id="code">
+            <button style="background: rgb(23, 115, 151);color: white; width: 20%;height: 50px;border: none; display: block;position: relative;top: 50%;left: 40%;" type="submit">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

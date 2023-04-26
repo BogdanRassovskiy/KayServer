@@ -1,0 +1,1918 @@
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2316, in enter
+    merchName=Merch(login,0);
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 10754, in Merch
+    return merchName;
+UnboundLocalError: local variable 'merchName' referenced before assignment
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2447, in send_self_create_market
+    basic_usersS.append(basic_users(name,h(pswd),"_","self","market","0.0","0.0","0","ru",etc));
+NameError: name 'etc' is not defined
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2447, in send_self_create_market
+    basic_usersS.append(basic_users(name,h(pswd),"_","self","market","0.0","0.0","0","ru",etc));
+NameError: name 'etc' is not defined
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2447, in send_self_create_market
+    basic_usersS.append(basic_users(name,h(pswd),"_","self","market","0.0","0.0","0","ru",etc));
+NameError: name 'etc' is not defined
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2447, in send_self_create_market
+    basic_usersS.append(basic_users(name,h(pswd),"_","self","market","0.0","0.0","0","ru",etc));
+NameError: name 'etc' is not defined
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2447, in send_self_create_market
+    basic_usersS.append(basic_users(name,h(pswd),"_","self","market","0.0","0.0","0","ru",etc));
+NameError: name 'etc' is not defined
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'etc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2419, in send_self_create_market
+    etc=request.GET['etc'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'etc'
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'etc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2419, in send_self_create_market
+    etc=request.GET['etc'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'etc'
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'etc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2419, in send_self_create_market
+    etc=request.GET['etc'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'etc'
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'etc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 2419, in send_self_create_market
+    etc=request.GET['etc'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'etc'
+
+>>>>>>18.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9552, in get_search_loc
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>11.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9552, in get_search_loc
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>11.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9552, in get_search_loc
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>11.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9552, in get_search_loc
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>11.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1885, in get_updates
+    driversS.add(0)
+AttributeError: 'list' object has no attribute 'add'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1885, in get_updates
+    driversS.add(0)
+AttributeError: 'list' object has no attribute 'add'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'drivers'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1821, in get_updates
+    drivers=request.POST['drivers'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'drivers'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1819, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1819, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1819, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1819, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'categories'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1818, in get_updates
+    categories=request.POST['categories'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'categories'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'naks'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    naks=request.POST['naks'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'naks'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1823, in get_updates
+    if m.merch==login or m.getter==login:
+AttributeError: 'orders_order' object has no attribute 'merch'
+
+>>>>>>10.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5528, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>8.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>6.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>6.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>6.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>6.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1869, in get_strings
+    langs.append(l.lang);
+AttributeError: 'strings_uz' object has no attribute 'lang'
+
+>>>>>>6.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1869, in get_strings
+    langs.append(l.langs);
+AttributeError: 'strings_uz' object has no attribute 'langs'
+
+>>>>>>6.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1869, in get_strings
+    langs.append(l.langs);
+AttributeError: 'strings_uz' object has no attribute 'langs'
+
+>>>>>>6.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    messagsS.append(0);
+NameError: name 'messagsS' is not defined
+
+>>>>>>1.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    messagsS.append(0);
+NameError: name 'messagsS' is not defined
+
+>>>>>>1.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1813, in get_updates
+    messagsS.append(0);
+NameError: name 'messagsS' is not defined
+
+>>>>>>1.4.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 6460, in get_chat_admins
+    sendList=sendList.append([login[i],merchName1[i],role]);
+AttributeError: 'NoneType' object has no attribute 'append'
+
+>>>>>>30.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 6460, in get_chat_admins
+    sendList=sendList.append([login[i],merchName1[i],role]);
+AttributeError: 'NoneType' object has no attribute 'append'
+
+>>>>>>30.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 6457, in get_chat_admins
+    sendList=sendList.append([login[i],merchName1[i],role]);
+AttributeError: 'str' object has no attribute 'append'
+
+>>>>>>30.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.9/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb712302070>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.44.113', port=8002): Max retries exceeded with url: /check_tg_data/?tg_id=104932971&tg_pswd= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb712302070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4072, in check_send_tg_settings
+    get_html(KAY+"/check_tg_data/?tg_id={0}&tg_pswd={1}".format(tg_id,tg_pswd,));
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 10881, in get_html
+    r = rq.get(url,headers=HEADERS,params=params)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.44.113', port=8002): Max retries exceeded with url: /check_tg_data/?tg_id=104932971&tg_pswd= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb712302070>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+>>>>>>30.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/usr/lib/python3/dist-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3.9/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.9/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.9/http/client.py", line 950, in send
+    self.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fb712121bb0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='192.168.44.113', port=8002): Max retries exceeded with url: /check_tg_data/?tg_id=104932971&tg_pswd= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb712121bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4072, in check_send_tg_settings
+    get_html(KAY+"/check_tg_data/?tg_id={0}&tg_pswd={1}".format(tg_id,tg_pswd,));
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 10881, in get_html
+    r = rq.get(url,headers=HEADERS,params=params)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='192.168.44.113', port=8002): Max retries exceeded with url: /check_tg_data/?tg_id=104932971&tg_pswd= (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb712121bb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+>>>>>>30.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'markectName'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 7984, in send_photo_new
+    marketName=request.POST['markectName'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'markectName'
+
+>>>>>>30.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 3768, in get_market_history
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>26.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5533, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>25.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 3678, in get_i_market
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>23.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 3678, in get_i_market
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>23.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 3728, in get_market_news
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>23.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 3546, in get_merchants
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>16.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'new_inn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9017, in send_new_inn
+    new_inn=request.GET['new_inn'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'new_inn'
+
+>>>>>>13.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'new_inn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9017, in send_new_inn
+    new_inn=request.GET['new_inn'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'new_inn'
+
+>>>>>>13.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9014, in send_new_inn
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>13.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 78, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'session'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9014, in send_new_inn
+    session=request.GET['session'];
+  File "/usr/lib/python3/dist-packages/django/utils/datastructures.py", line 80, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'session'
+
+>>>>>>13.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>13.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 9881, in get_prices
+    merchName=Merch(session);
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 10882, in Merch
+    return merchName;
+UnboundLocalError: local variable 'merchName' referenced before assignment
+
+>>>>>>13.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5691, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4361, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4361, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4361, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4361, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4361, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4360, in get_history
+    print(how)
+UnboundLocalError: local variable 'how' referenced before assignment
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4360, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 4380, in get_history
+    how=d[z][1];
+IndexError: list index out of range
+
+>>>>>>6.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8978, in send_order
+    inCar_cashInCarS[i].cash=str(int(nal)+int(nal1));
+UnboundLocalError: local variable 'nal1' referenced before assignment
+
+>>>>>>2.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8978, in send_order
+    inCar_cashInCarS[i].cash=str(int(nal)+int(nal1));
+UnboundLocalError: local variable 'nal1' referenced before assignment
+
+>>>>>>2.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8978, in send_order
+    inCar_cashInCarS[i].cash=str(int(nal)+int(nal1));
+UnboundLocalError: local variable 'nal1' referenced before assignment
+
+>>>>>>2.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8978, in send_order
+    inCar_cashInCarS[i].cash=str(int(nal)+int(nal1));
+UnboundLocalError: local variable 'nal1' referenced before assignment
+
+>>>>>>2.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8977, in send_order
+    inCar_cashInCarS[i].cash=str(int(nal)+int(nal1));
+UnboundLocalError: local variable 'nal1' referenced before assignment
+
+>>>>>>2.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8977, in send_order
+    inCar_cashInCarS[i].cash=str(int(nal)+int(nal1));
+UnboundLocalError: local variable 'nal1' referenced before assignment
+
+>>>>>>2.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8976, in send_order
+    inCar_cashInCarS[i].cash=str(int(nal)+int(nal1));
+UnboundLocalError: local variable 'nal1' referenced before assignment
+
+>>>>>>2.3.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8779, in send_dolg
+    checkMarket(merchName,getter);
+UnboundLocalError: local variable 'getter' referenced before assignment
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8781, in send_dolg
+    if inc.merchName==merchName and inc.removed=="0":
+NameError: name 'inc' is not defined
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 1210, in writeDb
+    cursor.execute("UPDATE actHistory SET login =(?) WHERE login=(?)",(s.login,s.login));
+sqlite3.OperationalError: database is locked
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8779, in send_dolg
+    checkMarket(merchName,getter);
+UnboundLocalError: local variable 'getter' referenced before assignment
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 8781, in send_dolg
+    if inc.merchName==merchName and inc.removed=="0":
+NameError: name 'inc' is not defined
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5740, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
+Traceback (most recent call last):
+  File "/home/tom/Рабочий стол/KayAppServer/KayAppServer/views.py", line 5739, in send_give_him_order
+    free[0];
+IndexError: string index out of range
+
+>>>>>>28.2.2023<<<<<<<<
+
+
