@@ -4072,6 +4072,7 @@ def send_market_order(request,var='network'):
                 txt="Новый заказ🎈№{0}\nЗаказчик: {1}\n\n{2}\n\n{3}".format(last_index,market,dataTxt+"\n"+payFormTxt,
                     'Адрес:'+adres+'\n'+phone+'\n'+phone2);
                 messageInChannel(merchName,txt);
+                locInChannel(merchName,lat,lon);
                 send={"err":"0","text":"OK"};
                 for a in admins:
                     async2(a,"getAdminOrders");
@@ -11022,6 +11023,21 @@ def messageInChannelThread(merchName,text):
     print(tg_token)
     print(tg_id)
     req = "https://api.telegram.org/bot"+tg_token+"/sendMessage?chat_id="+tg_id+"&text="+text;
+    print(get_html(req).text);
+    print(req)
+def locInChannel(merchName,text):
+    try:
+        #print(text);
+        minch = threading.Thread(target=messageInChannelThread, args=(merchName,text),daemon=True)
+        minch.start()
+    except Exception as e:
+        logger(e);
+def locInChannelThread(merchName,latitude,longitude):
+    tg_token=getConst(merchName,"tg_token").replace(" ","");
+    tg_id=getConst(merchName,"tg_id").replace(" ","");
+    print(tg_token)
+    print(tg_id)
+    req = "https://api.telegram.org/bot"+tg_token+"/sendLocation?chat_id="+tg_id+"&latitude="+latitude+"&longitude="+longitude;
     print(get_html(req).text);
     print(req)
 def locationInChannel(merchName,lon,lat):
