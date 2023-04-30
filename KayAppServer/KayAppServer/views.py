@@ -11025,10 +11025,10 @@ def messageInChannelThread(merchName,text):
     req = "https://api.telegram.org/bot"+tg_token+"/sendMessage?chat_id="+tg_id+"&text="+text;
     print(get_html(req).text);
     print(req)
-def locInChannel(merchName,text):
+def locInChannel(merchName,latitude,longitude):
     try:
         #print(text);
-        minch = threading.Thread(target=messageInChannelThread, args=(merchName,text),daemon=True)
+        minch = threading.Thread(target=messageInChannelThread, args=(merchName,latitude,longitude),daemon=True)
         minch.start()
     except Exception as e:
         logger(e);
