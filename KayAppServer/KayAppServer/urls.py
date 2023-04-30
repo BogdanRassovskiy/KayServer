@@ -91,6 +91,10 @@ urlpatterns = [
     path('send_site/', views.send_site,name="send_site"),
     path('send_edit_prices/', views.send_edit_prices,name="send_edit_prices"),
     path('send_districts_driver/', views.send_districts_driver,name="send_districts_driver"),
+    path('get_kladmens/', views.get_kladmens,name="get_kladmens"),
+    path('send_new_kladmen/', views.send_new_kladmen,name="send_new_kladmen"),
+    path('send_remove_kladmen/', views.send_remove_kladmen,name="send_remove_kladmen"),
+    path('klad_add/', views.klad_add,name="klad_add"),
     #market
     path('get_merchants/', views.get_merchants,name="get_merchants"),
     path('get_market_categories/', views.get_market_categories,name="get_market_categories"),

@@ -4597,22 +4597,11 @@ def get_admins(request,var='network'):
             if User(session)=="admin":
                 merchName=Merch(session);
                 login=Login(session);
-                #conn=sqlite3.connect("basic2.sqlite");
-                #cursor=conn.cursor();
-                #cursor.execute("SELECT login FROM 'users'WHERE user_type='admin'AND merchName=(?)",(merchName,));
-                #logins=cort_to_list(cursor.fetchall());
-                #conn.close();
                 logins=[];
                 for c in basic_usersS:
                     if c.user_type=="admin" and c.merchName==merchName:
                         logins.append(c.login);
-                #conn=sqlite3.connect(mPath(merchName,"orders2"));
-                #cursor=conn.cursor();
                 for l in logins:
-                    #cursor.execute("SELECT level FROM 'admins'WHERE login=(?)",(l,));
-                    #level=cort_to_list(cursor.fetchall())[0];
-                    #cursor.execute("SELECT role FROM 'admins'WHERE login=(?)",(l,));
-                    #role=cort_to_list(cursor.fetchall())[0];
                     for o in orders_adminsS:
                         if o.merchName==merchName and o.removed=="0":
                             if o.login==l:
@@ -4622,9 +4611,35 @@ def get_admins(request,var='network'):
                     if role==None:
                         role="";
                     admins.append([l,level.replace("|","_"),role]);
-                #conn.close();
                 admins=arrayToString2(admins);
                 send={"err":"0","admins":admins};
+            else:
+                send={"err":"1","text":"Вы не админ"};
+        else:
+            send={"err":"1","text":"Сессия истекла"};
+    except Exception as e:
+        logger(e);
+        send={"err":"1","text":"Ошибка сервера"};
+    if var=='network':
+        send=json.dumps(send);
+        return HttpResponse(send, content_type='application/json')
+    else:
+        return send
+def get_kladmens(request,var='network'):
+    try:
+        kladmens=[];
+        if request.method=='POST':session=request.POST['session'];
+        if request.method=='GET':session=request.GET['session'];
+        if checkSession(session):
+            if User(session)=="admin":
+                merchName=Merch(session);
+                login=Login(session);
+                logins=[];
+                for c in basic_usersS:
+                    if c.user_type=="kladmen" and c.merchName==merchName:
+                        kladmens.append([c.login]);
+                kladmens=arrayToString2(kladmens);
+                send={"err":"0","kladmens":kladmens};
             else:
                 send={"err":"1","text":"Вы не админ"};
         else:
@@ -5026,7 +5041,7 @@ def send_prod_settings(request,var='network'):
         if request.method=='POST':session=request.POST['session'];
         if request.method=='GET':session=request.GET['session'];
         if checkSession(session):
-            if User(session)=="admin":
+            if User(session)=="admin" or User(session)=='kladmen':
                 #sendInfo=request.GET['sendInfo'];
                 if request.method=='POST':
                     prod_id=request.POST['prod_id'];
@@ -5239,7 +5254,34 @@ def send_cho_chosen_nak(request,var='network'):
         return HttpResponse(send, content_type='application/json')
     else:
         return send
-
+def klad_add(request,var='network'):
+    try:
+        if request.method=='POST':session=request.POST['session'];
+        if checkSession(session):
+            if User(session)=="admin" or User(session)=='kladmen':
+                prod_id=request.POST['prod_id'];
+                howAdd=request.POST['howAdd'];
+                merchName=Merch(session);
+                for i in range(len(orders_productsS)):
+                    if orders_productsS[i].merchName==merchName:
+                        if orders_productsS[i].id==prod_id:
+                            orders_productsS[i].ost=str(int(orders_productsS[i].ost)+int(howAdd));
+                            orders_productsS[i].changed='1';
+                            break;
+                send={"err":"0","text":'OK'};
+            else:
+                send={"err":"1","text":"Вы не админ"};
+        else:
+            send={"err":"1","text":"Сессия истекла"};
+    except Exception as e:
+        logger(e);
+        send={"err":"1","text":"Ошибка сервера"};
+    print(send)
+    if var=='network':
+        send=json.dumps(send);
+        return HttpResponse(send, content_type='application/json')
+    else:
+        return send
 def send_edit_prices(request,var="network"):
     try:
         if request.method=='POST':session=request.POST['session'];
@@ -7317,6 +7359,42 @@ def send_url_in_tg(request):
     send=json.dumps(send);
     return HttpResponse(send, content_type='application/json');
 
+def send_new_kladmen(request,var='network'):
+    try:
+        if request.method=='POST':session=request.POST['session'];
+        if request.method=='GET':session=request.GET['session'];
+        if checkSession(session):
+            if User(session)=="admin":
+                kladmenName=request.POST['kladmenName'];
+                kladmenPswd=request.POST['kladmenPswd'];
+                kladmenVar=request.POST['kladmenVar'];
+                login1=Login(session);
+                merchName=Merch(session);
+                login=[];
+                for c in basic_usersS:
+                    login.append(c.login);
+                if kladmenVar=="new":
+                    basic_usersS.append(basic_users(kladmenName,h(kladmenPswd),"_",merchName,"kladmen","0.01","0.01","0","ru",kladmenName,));
+                    send={"err":"0","text":"OK"};
+                elif kladmenVar=="old":
+                    for i in range(len(basic_usersS)):
+                        if basic_usersS[i].login==kladmenName:
+                            basic_usersS[i].pswd=h(kladmenPswd)
+                            basic_usersS[i].changed="1";
+                            break;
+                    send={"err":"0","text":"OK"};
+            else:
+                send={"err":"1","text":"Вы не админ"};
+        else:
+            send={"err":"1","text":"Сессия истекла"};
+    except Exception as e:
+        logger(e);
+        send={"err":"1","text":"Ошибка сервера"};
+    if var=='network':
+        send=json.dumps(send);
+        return HttpResponse(send, content_type='application/json')
+    else:
+        return send
 def send_new_admin(request,var='network'):
     try:
         if request.method=='POST':session=request.POST['session'];
@@ -7337,10 +7415,6 @@ def send_new_admin(request,var='network'):
                     role=request.POST['role'];
                 login1=Login(session);
                 merchName=Merch(session);
-                #conn=sqlite3.connect("basic2.sqlite");
-                #cursor=conn.cursor();
-                #cursor.execute("SELECT login FROM 'users'");
-                #login=cort_to_list(cursor.fetchall());
                 login=[];
                 for c in basic_usersS:
                     login.append(c.login);
@@ -7348,20 +7422,10 @@ def send_new_admin(request,var='network'):
                     send={"err":"1","text":"Логин существует"};
                 else:
                     if adminVar=="new":
-                        #cursor.execute("INSERT INTO users VALUES((?),(?),(?),(?),(?),(?),(?),(?),(?))",
-                        #    (adminName,h(adminPswd),"_",merchName,"admin","0.01","0.01","0","ru",));
                         basic_usersS.append(basic_users(adminName,h(adminPswd),"_",merchName,"admin","0.01","0.01","0","ru",adminName,));
-
-                        #conn1=sqlite3.connect(mPath(merchName,"orders2"));
-                        #cursor1=conn1.cursor();
-                        #cursor1.execute("INSERT INTO 'admins' VALUES((?),(?),(?))",(adminName,"",role,));
-                        #conn1.commit();
-                        #conn1.close();
                         orders_adminsS.append(orders_admins(adminName,"",role,merchName));
                         send={"err":"0","text":"OK"};
                     elif adminVar=="old":
-                        #cursor.execute("UPDATE 'users' SET pswd=(?)WHERE login=(?)",(h(adminPswd),adminOld,));
-                        #cursor.execute("UPDATE 'users' SET login=(?)WHERE login=(?)",(adminName,adminOld,));
                         print(adminVar)
                         print(adminOld)
                         print(adminName)
@@ -7369,7 +7433,7 @@ def send_new_admin(request,var='network'):
                             print('this')
                             for i in range(len(basic_usersS)):
                                 if basic_usersS[i].login==adminOld:
-                                    adminPswd=basic_usersS[i].pswd
+                                    basic_usersS[i].pswd=h(adminPswd);
                                     basic_usersS[i].removed="1";
                                     basic_usersS[i].changed="1";
                                     break;
@@ -7387,29 +7451,42 @@ def send_new_admin(request,var='network'):
                                 if basic_usersS[i].login==adminOld:
                                     if adminPswd!='':
                                         basic_usersS[i].pswd=h(adminPswd);
-                                    #if adminName!='':
-                                    #    basic_usersS[i].login=adminName;
                                     basic_usersS[i].changed="1";
                                     print('ok')
                                     break;
-                            #conn1=sqlite3.connect(mPath(merchName,"orders2"));
-                            #cursor1=conn1.cursor();
-                            #cursor1.execute("UPDATE 'admins'SET role=(?)WHERE login=(?)",(role,adminOld,));
-                            #cursor1.execute("UPDATE 'admins'SET login=(?)WHERE login=(?)",(adminName,adminOld,));
-                            #conn1.commit();
-                            #conn1.close();
                             for i in range(len(orders_adminsS)):
                                 if orders_adminsS[i].merchName==merchName:
                                     if orders_adminsS[i].login==adminOld:
                                         if role!='':
                                             orders_adminsS[i].role=role;
-                                        #if adminName!='':
-                                        #    orders_adminsS[i].login=adminName;
                                         orders_adminsS[i].changed="1";
                                         break;
                         send={"err":"0","text":"OK"};
-                    #conn.commit();
-                    #conn.close();
+            else:
+                send={"err":"1","text":"Вы не админ"};
+        else:
+            send={"err":"1","text":"Сессия истекла"};
+    except Exception as e:
+        logger(e);
+        send={"err":"1","text":"Ошибка сервера"};
+    if var=='network':
+        send=json.dumps(send);
+        return HttpResponse(send, content_type='application/json')
+    else:
+        return send
+def send_remove_kladmen(request,var='network'):
+    try:
+        if request.method=='POST':session=request.POST['session'];
+        if checkSession(session):
+            if User(session)=="admin":
+                kladmenName=request.POST['kladmenName'];
+                merchName=Merch(session);
+                for i in range(len(basic_usersS)):
+                    if basic_usersS[i].login==kladmenName:
+                        basic_usersS[i].removed="1";
+                        basic_usersS[i].changed="1";
+                        break;
+                send={"err":"0","text":"OK"};
             else:
                 send={"err":"1","text":"Вы не админ"};
         else:
@@ -7433,21 +7510,11 @@ def send_remove_admin(request,var='network'):
                 else:
                     adminName=request.GET['adminName'];
                 merchName=Merch(session);
-                #conn=sqlite3.connect("basic2.sqlite");
-                #cursor=conn.cursor();
-                #cursor.execute("DELETE FROM 'users'WHERE login=(?)AND user_type='admin'",(adminName,));
-                #conn.commit();
-                #conn.close();
                 for i in range(len(basic_usersS)):
                     if basic_usersS[i].login==adminName:
                         basic_usersS[i].removed="1";
                         basic_usersS[i].changed="1";
                         break;
-                #conn=sqlite3.connect(mPath(merchName,"orders2"));
-                #cursor=conn.cursor();
-                #cursor.execute("DELETE FROM 'admins'WHERE login=(?)",(adminName,));
-                #conn.commit();
-                #conn.close();
                 for i in range(len(orders_adminsS)):
                     if orders_adminsS[i].merchName==merchName:
                         if orders_adminsS[i].login==adminName:
