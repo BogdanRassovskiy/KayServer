@@ -4050,7 +4050,27 @@ def send_market_order(request,var='network'):
                 elif payForm=="per":
                     payFormTxt="Перечисление";
                 payFormTxt="Форма оплаты: "+payFormTxt;
-                txt="Новый заказ🎈№{0}\nЗаказчик: {1}\n\n{2}".format(last_index,market,dataTxt+"\n"+payFormTxt);
+
+                
+                lon='0';
+                lat='0'
+                for m in basic_usersS:
+                    if m.login==market:
+                        lon=m.lon
+                        lat=m.lat
+                        break;
+                adres='';
+                phone='';
+                phone2='';
+                for m in markets_usersS:
+                    if m.login==market:
+                        adres=m.adres
+                        phone=m.phone
+                        phone2=m.phone2
+                        break;
+
+                txt="Новый заказ🎈№{0}\nЗаказчик: {1}\n\n{2}\n\n{3}".format(last_index,market,dataTxt+"\n"+payFormTxt,
+                    'Адрес:'+adres+'\n'+phone+'\n'+phone2);
                 messageInChannel(merchName,txt);
                 send={"err":"0","text":"OK"};
                 for a in admins:
