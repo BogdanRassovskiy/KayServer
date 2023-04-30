@@ -2915,7 +2915,7 @@ def change_klad_pswd(request,var='network'):
         if request.method=='POST':session=request.POST['session'];
         if request.method=='GET':session=request.GET['session'];
         if checkSession(session):
-            if User(session)=="admin":
+            if User(session)=="admin" or User(session)=='kladmen':
                 if request.method=='POST':
                     login=request.POST['login'];
                     pswd=request.POST['pswd'];
