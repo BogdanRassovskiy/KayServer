@@ -1858,7 +1858,7 @@ def get_updates(request,var='network'):
                         productsS.append(0);
             print(products,len(productsS));
             if products!=str(len(productsS)):
-                if user=='admin' or user=='driver':
+                if user=='admin' or user=='driver' or user=='kladmen':
                     sendProducts=get_product_list(request,'local');
                 elif user=='market':
                     sendProducts=get_market_products(request,'local');
@@ -1866,7 +1866,7 @@ def get_updates(request,var='network'):
 
             categoriesS=[];
             for m in orders_categoriesS:
-                if user=='admin' or user=='driver':
+                if user=='admin' or user=='driver' or user=='kladmen':
                     if m.merchName==merchName and m.work=='1':
                         categoriesS.append(0);
                 elif user=='market':
@@ -2881,6 +2881,36 @@ def send_new_root_pswd(request,var='network'):
     else:
         return send
 def send_admin_pswd(request,var='network'):
+    try:
+        if request.method=='POST':session=request.POST['session'];
+        if request.method=='GET':session=request.GET['session'];
+        if checkSession(session):
+            if User(session)=="admin":
+                if request.method=='POST':
+                    login=request.POST['login'];
+                    pswd=request.POST['pswd'];
+                if request.method=='GET':
+                    login=request.GET['login'];
+                    pswd=request.GET['pswd'];
+                for i in range(len(basic_usersS)):
+                    if basic_usersS[i].login==login:
+                        basic_usersS[i].pswd=h(pswd);
+                        basic_usersS[i].changed="1";
+                        break;
+                send={"err":"0","text":"OK"};
+            else:
+                send={"err":"1","text":"Вы не admin"};
+        else:
+            send={"err":"1","text":"Сессия истекла"};
+    except Exception as e:
+        logger(e);
+        send={"err":"1","text":"Ошибка сервера"};
+    if var=='network':
+        send=json.dumps(send);
+        return HttpResponse(send, content_type='application/json')
+    else:
+        return send
+def change_klad_pswd(request,var='network'):
     try:
         if request.method=='POST':session=request.POST['session'];
         if request.method=='GET':session=request.GET['session'];
