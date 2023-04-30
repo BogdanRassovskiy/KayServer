@@ -11028,8 +11028,8 @@ def messageInChannelThread(merchName,text):
 def locInChannel(merchName,latitude,longitude):
     try:
         #print(text);
-        minch = threading.Thread(target=messageInChannelThread, args=(merchName,latitude,longitude),daemon=True)
-        minch.start()
+        minch2 = threading.Thread(target=locInChannelThread, args=(merchName,latitude,longitude),daemon=True)
+        minch2.start()
     except Exception as e:
         logger(e);
 def locInChannelThread(merchName,latitude,longitude):
