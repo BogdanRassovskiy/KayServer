@@ -4070,7 +4070,7 @@ def send_market_order(request,var='network'):
                         break;
 
                 txt="Новый заказ🎈№{0}\nЗаказчик: {1}\n\n{2}\n\n{3}".format(last_index,market,dataTxt+"\n"+payFormTxt,
-                    'Адрес:'+adres+'\n'+phone+'\n'+phone2);
+                    'Адрес:'+str(adres)+'\n'+str(phone)+'\n'+str(phone2));
                 messageInChannel(merchName,txt);
                 locInChannel(merchName,lat,lon);
                 send={"err":"0","text":"OK"};
